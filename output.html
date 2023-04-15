@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta chet="utf-8">
+  <title>Actividad 3.4</title>
+  <style>
+  body {
+    background-color: #25292E;
+    color: #f8f8f2;
+    font-family: Consolas, monospace;
+    font-size: 18px;
+    margin-left: 40px;
+  }
+
+  pre {
+    margin: 0;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  span.keyword {
+    color: #A020F0;
+  }
+
+  span.operator {
+    color: #D3747C;
+    margin: 0 -7px;
+  }
+
+  span.separator {
+    color: #f7f486;
+    margin: 0 -5px;
+  }
+
+  span.identifier {
+    color: #cccccc;
+  }
+
+  span.number {
+    color: #fc6fa5;
+  }
+
+  span.string {
+    color: #59c6c9;
+    margin-right: -5px;
+  }
+
+  span.comment {
+    color: #75715e;
+  }
+  </style>
+</head>
+<body>
+  <pre><pre> <span class="comment">// Este es un comentario de una sola línea </span></pre><pre> </pre><pre><span class="comment"></span> <span class="comment">/*</span></pre><pre><span class="comment"></span> <span class="comment">    Este es un comentario</span></pre><pre><span class="comment"></span> <span class="comment">    con líneas múltiples</span></pre><pre><span class="comment"></span> <span class="comment">*/</span></pre><pre> </pre><pre> </pre><pre> <span class="keyword">using</span> <span class="identifier">System</span> <span class="separator">;</span> </pre><pre> </pre><pre> <span class="keyword">using</span> <span class="identifier">System</span> <span class="separator">;</span> </pre><pre> <span class="keyword">class</span> <span class="identifier">Program</span>  </pre><pre>    <span class="separator">{</span>   </pre><pre>         <span class="keyword">public</span> <span class="keyword">void</span> <span class="identifier">square</span> <span class="separator">(</span> <span class="keyword">ref</span> <span class="keyword">int</span> <span class="identifier">nmbr</span> <span class="separator">)</span>   </pre><pre>          <span class="separator">{</span>   </pre><pre>             <span class="identifier">nmbr</span>  <span class="operator">=</span>  <span class="identifier">nmbr</span>  <span class="operator">*</span>  <span class="identifier">nmbr</span> <span class="separator">;</span> </pre><pre>            <span class="comment">// Lets provide a return statement  </span></pre><pre>            <span class="identifier">Console</span> <span class="separator">.</span> <span class="identifier">WriteLine</span> <span class="separator">(</span> <span class="string">"Square of the given number is  "</span>  <span class="operator">+</span>  <span class="identifier">nmbr</span> <span class="separator">)</span>  <span class="separator">;</span>   </pre><pre>           <span class="separator">}</span>   </pre><pre>           </pre><pre>         <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="identifier">Main</span> <span class="separator">(</span> <span class="keyword">string</span> <span class="separator">[</span>  <span class="separator">]</span>  <span class="identifier">args</span> <span class="separator">)</span>   </pre><pre>          <span class="separator">{</span>   </pre><pre>            <span class="keyword">int</span> <span class="identifier">nmbr</span>  <span class="operator">=</span>  2 <span class="separator">;</span>  <span class="comment">// Value assigned before calling function</span></pre><pre>            <span class="identifier">Program</span> <span class="identifier">pr</span>  <span class="operator">=</span>  <span class="keyword">new</span> <span class="identifier">Program</span> <span class="separator">(</span>  <span class="separator">)</span>  <span class="separator">;</span>  <span class="comment">// Creating a class Object  </span></pre><pre>           </pre><pre>            <span class="identifier">Console</span> <span class="separator">.</span> <span class="identifier">WriteLine</span> <span class="separator">(</span> <span class="string">"The given number is  "</span>  <span class="operator">+</span>  <span class="identifier">nmbr</span> <span class="separator">)</span>  <span class="separator">;</span>  <span class="comment">//printing the value  </span></pre><pre>             <span class="identifier">pr</span> <span class="separator">.</span> <span class="identifier">square</span> <span class="separator">(</span>  <span class="keyword">ref</span>  <span class="identifier">nmbr</span> <span class="separator">)</span>  <span class="separator">;</span>  <span class="comment">//calling by reference using ref keyword</span></pre><pre>         </pre><pre>          <span class="separator">}</span>   </pre><pre>      <span class="separator">}</span> </pre><pre> </pre></pre>
+</body>
+</html>
